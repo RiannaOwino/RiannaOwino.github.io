@@ -1,32 +1,37 @@
-
+/* styling the headers differently than the text */
 h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: rgb(138, 22, 57)
   
 }
+/* setting the bg colour, and adding padding and a margin to the body so they fit nicely within the borders of the container */
 body {
     background-color:rgb(255, 159, 180);
     padding: 0;
     margin: 0;
 }
+/* setting different colours for the link based on its status for a little personalisation */
 a:link {
     color: rgb(108, 11, 40)
 }
 a:visited {
     color: #b64767
 }
+/*  styling the list and its icons */
 ul {
     list-style-type: circle;
     list-style-position: inside;
     text-align: center;
 }
+/* styling the text, adding padding so it fits within the body container, and adjusting its font size to be scalable */
 p {
     text-align: center;
     padding: 0 10px;
     font-size: 1rem;
     line-height: 1.6;
 }
+/* styling + giving the container a max-width and a % for the width to make it more scalable and adjustable across different screen sizes. giving margins of 30px auto to center it after adjusting the width */
 .container {
   width: 90%;
   max-width: 1000px;
@@ -37,6 +42,7 @@ p {
   border-radius: 8px;
   background-color: rgb(255, 159, 180);
 }
+/* the block display helps it take up the full container width, max-width makes it adjustable across different-size screens. margins for centering. */
 img {
   display: block;
   margin: 20px auto;
@@ -44,6 +50,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* using the '@media' rule to configure specific rules for mobile view (hence max-width 600px) */
 @media (max-width: 600px) {
   .container {
     padding: 20px;
